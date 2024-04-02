@@ -2,10 +2,6 @@
 
 Bug reports, code contributions, and general feedback are very welcome. These should be submitted through [the GitHub repository](https://github.com/johnbillion/extended-cpts). Development happens in the `develop` branch, and any pull requests should be made against that branch please.
 
-## Reporting Security Issues
-
-If you discover a security issue in Extended CPTs, please report it to [the security program on HackerOne](https://hackerone.com/johnblackbourn). Do not report security issues on GitHub. Thank you.
-
 ## Setting up Locally
 
 If you want to contribute to Extended CPTs, you should install the developer dependencies in order to run the tests.
