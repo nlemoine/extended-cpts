@@ -19,6 +19,7 @@ jobs:
     strategy:
       matrix:
         php:
+          # Newest and oldest supported versions of PHP
           - '8.3'
           - '7.4'
       fail-fast: false
