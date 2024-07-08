@@ -135,7 +135,7 @@ class Setup extends Test {
 			'singular_name'            => 'Singular',
 			'menu_name'                => 'Plural',
 			'name_admin_bar'           => 'Singular',
-			'add_new'                  => 'Add New',
+			'add_new'                  => 'Add New Singular',
 			'add_new_item'             => 'Add New Singular',
 			'edit_item'                => 'Edit Singular',
 			'new_item'                 => 'New Singular',
@@ -166,6 +166,7 @@ class Setup extends Test {
 			'item_link'                => 'Singular Link',
 			'item_link_description'    => 'A link to a singular.',
 			'item_trashed'             => 'Singular trashed.',
+			'template_name'            => 'Single item: Singular',
 		), $bar->labels );
 
 		$featured_image = version_compare( $wp_version, '5.4', '>=' ) ? 'Featured image' : 'Featured Image';
@@ -176,7 +177,7 @@ class Setup extends Test {
 			'singular_name'            => 'FAQ',
 			'menu_name'                => 'FAQs',
 			'name_admin_bar'           => 'FAQ',
-			'add_new'                  => 'Add New',
+			'add_new'                  => 'Add New FAQ',
 			'add_new_item'             => 'Add New FAQ',
 			'edit_item'                => 'Edit FAQ',
 			'new_item'                 => 'New FAQ',
@@ -207,6 +208,7 @@ class Setup extends Test {
 			'item_link'                => 'FAQ Link',
 			'item_link_description'    => 'A link to a FAQ.',
 			'item_trashed'             => 'FAQ trashed.',
+			'template_name'            => 'Single item: FAQ',
 		), $faq->labels );
 
 		$post = get_post_type_object( 'post' );
