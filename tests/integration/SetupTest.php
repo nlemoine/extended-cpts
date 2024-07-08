@@ -254,6 +254,7 @@ class Setup extends Test {
 			'archives'                   => 'Foo Categorys Archives',
 			'item_link'                  => 'Foo Category Link',
 			'item_link_description'      => 'A link to a foo category.',
+			'template_name'              => 'Foo Category Archives',
 		);
 
 		if ( version_compare( $wp_version, '5.9.0', '>=' ) ) {
