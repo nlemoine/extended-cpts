@@ -2,6 +2,7 @@ includes:
 	- vendor/szepeviktor/phpstan-wordpress/extension.neon
 	- vendor/phpstan/phpstan-phpunit/extension.neon
 	- vendor/johnbillion/plugin-infrastructure/phpstan/extension.neon
+	- vendor/johnbillion/wp-compat/extension.neon
 parameters:
 	level: 8
 	paths:
@@ -17,3 +18,5 @@ parameters:
 		- '#^Used function (p2p_type|p2p_connection_exists) not found\.$#'
 		- '#^Function (p2p_type|p2p_connection_exists) not found\.$#'
 	reportUnmatchedIgnoredErrors: false
+	WPCompat:
+		requiresAtLeast: '5.7'
