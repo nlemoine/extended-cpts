@@ -11,7 +11,7 @@
 	"homepage": "https://github.com/johnbillion/extended-cpts/",
 	"require": {
 		"php": ">= 7.4.0",
-		"johnbillion/args": "^1.4.1"
+		"johnbillion/args": "^1.4.1 || ^2.0"
 	},
 	"require-dev": {
 		"automattic/phpcs-neutron-standard": "1.7.0",
