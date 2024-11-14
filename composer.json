@@ -18,7 +18,7 @@
 		"dealerdirect/phpcodesniffer-composer-installer": "^0.7",
 		"johnbillion/falsey-assertequals-detector": "*",
 		"johnbillion/plugin-infrastructure": "dev-trunk",
-		"johnbillion/wp-compat": "0.1.0",
+		"johnbillion/wp-compat": "0.3.0",
 		"lucatume/wp-browser": ">=3.0.21 <3.5",
 		"phpcompatibility/phpcompatibility-wp": "^2",
 		"phpstan/phpstan": "1.12.2",

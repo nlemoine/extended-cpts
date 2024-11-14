@@ -19,4 +19,4 @@ parameters:
 		- '#^Function (p2p_type|p2p_connection_exists) not found\.$#'
 	reportUnmatchedIgnoredErrors: false
 	WPCompat:
-		requiresAtLeast: '5.7'
+		requiresAtLeast: '5.8'
