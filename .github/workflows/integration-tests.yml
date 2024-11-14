@@ -30,7 +30,7 @@ jobs:
         include:
           # Oldest supported version of WordPress
           - php: '7.4'
-            wp: '5.7'
+            wp: '5.8'
       fail-fast: false
     with:
       wp: ${{ matrix.wp }}
