@@ -22,11 +22,27 @@ on:
   workflow_dispatch:
 
 jobs:
-  test:
-    name: Nightly integration / PHP ${{ matrix.php }}
+  standards:
+    name: Nightly ${{ matrix.label }}
+    strategy:
+      matrix:
+        label:
+          - 'standards'
+        php:
+          # Newest and oldest supported versions of PHP
+          - '8.4'
+          - '7.4'
+      fail-fast: false
+    uses: johnbillion/plugin-infrastructure/.github/workflows/reusable-coding-standards.yml@trunk
+    with:
+      php: ${{ matrix.php }}
+  integration:
+    name: Nightly ${{ matrix.label }}
     uses: johnbillion/plugin-infrastructure/.github/workflows/reusable-integration-tests.yml@trunk
     strategy:
       matrix:
+        label:
+          - 'integration'
         php:
           # Newest and oldest supported versions of PHP
           - '8.4'
