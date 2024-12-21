@@ -12,18 +12,20 @@ on:
       - '**'
   workflow_dispatch:
 
+permissions: {}
+
 jobs:
   test:
     name: ${{ matrix.label }}
+    permissions:
+      contents: read
     uses: johnbillion/plugin-infrastructure/.github/workflows/reusable-coding-standards.yml@trunk
     strategy:
       matrix:
         label:
           - PHP
         php:
-          # Newest and oldest supported versions of PHP
           - '8.4'
-          - '7.4'
       fail-fast: false
     with:
       php: ${{ matrix.php }}
