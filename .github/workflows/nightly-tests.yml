@@ -24,39 +24,6 @@ on:
 permissions: {}
 
 jobs:
-  standards:
-    name: Nightly ${{ matrix.label }}
-    permissions:
-      contents: read
-    strategy:
-      matrix:
-        label:
-          - 'standards'
-        php:
-          # Newest supported version of PHP
-          - '8.4'
-      fail-fast: false
-    uses: johnbillion/plugin-infrastructure/.github/workflows/reusable-coding-standards.yml@trunk
-    with:
-      php: ${{ matrix.php }}
-
-  static-analysis:
-    name: Nightly ${{ matrix.label }}
-    permissions:
-      contents: read
-    strategy:
-      matrix:
-        label:
-          - 'static analysis'
-        php:
-          # Newest and oldest supported versions of PHP
-          - '8.4'
-          - '7.4'
-      fail-fast: false
-    uses: johnbillion/plugin-infrastructure/.github/workflows/reusable-static-analysis.yml@trunk
-    with:
-      php: ${{ matrix.php }}
-
   integration:
     name: Nightly ${{ matrix.label }}
     permissions:
