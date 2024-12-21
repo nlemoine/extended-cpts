@@ -12,9 +12,13 @@ on:
       - '**'
   workflow_dispatch:
 
+permissions: {}
+
 jobs:
   test:
     name: WP ${{ matrix.wp }}
+    permissions:
+      contents: read
     uses: johnbillion/plugin-infrastructure/.github/workflows/reusable-integration-tests.yml@trunk
     strategy:
       matrix:
