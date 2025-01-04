@@ -172,6 +172,18 @@ The `register_extended_post_type()` and `register_extended_taxonomy()` functions
 
 There's quite a bit more you can do. [See the wiki for full documentation.](https://github.com/johnbillion/extended-cpts/wiki)
 
+## Sponsors
+
+The time that I spend maintaining this library and others is in part sponsored by:
+
+[![Automattic](https://cdn.jsdelivr.net/gh/johnbillion/johnbillion/assets/sponsors/automattic.png)](https://automattic.com)
+
+Plus all my kind sponsors on GitHub:
+
+[![Sponsors](https://cdn.jsdelivr.net/gh/johnbillion/johnbillion/sponsors.svg)](https://github.com/sponsors/johnbillion)
+
+[Click here to find out about supporting this library and my other WordPress development tools and plugins](https://github.com/sponsors/johnbillion).
+
 ## Contributing and Testing ##
 
 Please see [CONTRIBUTING.md](CONTRIBUTING.md) for information on contributing.
