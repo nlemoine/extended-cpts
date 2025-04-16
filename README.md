@@ -61,8 +61,8 @@ Not your first time here? See [Recent Changes for Developers](https://github.com
 
 * **PHP:** 7.4  
   - Tested up to PHP 8.4
-* **WordPress:** 5.8  
-  - Tested up to WP 6.7
+* **WordPress:** 6.0  
+  - Tested up to WP 6.8
 
 ## Installation ##
 
